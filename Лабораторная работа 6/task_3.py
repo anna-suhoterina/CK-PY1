@@ -11,7 +11,6 @@ data = [
 
 
 def to_csv_file(filename, headers, rows, delimiter=',', new_line='\n'):
-
     with open(filename, 'w') as f:
         f.write(delimiter.join(headers) + new_line)  # записываем в файл строку с заголовками
         for row in rows:  # перебираем списки с данными
